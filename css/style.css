@@ -1,0 +1,304 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  color: #0000008c;
+  font-family: 'Source Sans Pro';
+}
+
+header{
+  background-color: #00cad1;
+  width: 100%;
+}
+
+
+
+.topo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container{
+  width: 1024px;
+  margin: 0px auto;
+}
+
+.menu a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.menu a:hover{
+  color: #000;
+}
+
+/**  banner topo */
+
+.banner {
+  background-image: url(../assets/recepcao2.jpg);
+  background-color: #000;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 680px;
+  align-items: center;
+  display: flex;
+}
+.banner-texto{
+  font-size: 30px;
+}
+.banner-texto h1{
+  font-weight: normal;
+  color: #fff;
+}
+
+/* seção sobre*/
+
+.sobre{
+  text-align: center;
+  margin-top: 50px;
+}
+ .sobre h2{
+  margin-bottom: 50px;
+ }
+
+ .sobre-conteudo{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .sobre-conteudo ul{
+  padding-left: 55px;
+ }
+
+ .lista-titulo{
+  padding-bottom: 20px;
+  font-weight: normal;
+  
+ }
+
+/* especialidades pagina home*/
+
+.especialidades-home{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+
+}
+
+
+.multiespecialidade{
+  margin-bottom: 50px;
+}
+
+figure {
+  box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.8);
+}
+
+figure figcaption{
+  padding: 10px;
+}
+
+.ortopedia , .pediatria, .geriatria {
+  width: 300px;
+}
+
+.ortopedia-texto , .pediatria-texto, .geriatria-texto {
+  text-align: center;
+}
+
+.link-horarios{
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+  text-decoration: none;
+  background-color: #00cad1;
+  color: #fff;
+  width: 150px;
+  font-size: 20px;
+  padding: 10px 0px;
+
+}
+
+/* seção contatos*/
+
+
+.sobre h2,.sobre p {
+  margin-bottom: 25px;
+}
+
+/*seção rodappe*/
+
+footer {
+  background-color: #0c6e71;
+  text-align: center;
+  color: #fff;
+  margin-top: 50px;
+}
+
+footer p{
+
+ padding-bottom: 30px;
+}
+
+
+@media (max-width: 1024px){
+  .container{
+    max-width: 100%;
+  }
+  
+  .topo{
+    flex-shrink: 4;
+    flex-wrap: wrap;
+  }
+  
+  .lista-titulo{
+    margin-top: 50px;
+    font-size: 18px;
+    margin-right: 13px;
+  }
+
+  .multiespecialidade p{
+    font-size: 18px;
+  }
+
+  .multiespecialidade br{
+    display: none;
+  }
+
+  .ortopedia-conteudo{
+    margin:50px auto;
+  }
+  
+  .pediatria-conteudo{
+    margin:50px auto;
+  }
+
+  .geriatria-conteudo{
+    margin:50px auto;
+  }
+
+ #contato br{
+    display: none;
+  }
+}
+
+@media (max-width: 768px){
+
+  .sobre-conteudo img{
+    display: none;
+  }
+
+  .banner-texto{
+    font-size: 22px;
+  }
+
+  .sobre-texto{
+    font-size: 18px;
+  
+  }
+
+  .sobre-texto br{
+    display: none;
+  }
+
+  .lista-titulo{
+    margin-top: 50px;
+    font-size: 18px;
+    margin-right: 13px;
+  }
+
+  .multiespecialidade p{
+    font-size: 18px;
+  }
+
+  .multiespecialidade br{
+    display: none;
+  }
+
+  .ortopedia-conteudo{
+    margin:50px auto;
+  }
+  
+  .pediatria-conteudo{
+    margin:50px auto;
+  }
+
+  .geriatria-conteudo{
+    margin:50px auto;
+  }
+
+ #contato br{
+    display: none;
+  }
+}
+
+@media (max-width: 519px){
+
+  .topo{
+    flex-direction: column;
+    justify-content: space-between;
+    
+  }
+
+  .menu{
+    padding: 10px 0px;
+    border-top: 1px solid #0b707538;
+    border-bottom: 1px solid #05696e38;
+  }
+
+  .banner-texto{
+    font-size: 22px;
+  }
+
+  .sobre-texto{
+    font-size: 18px;
+  
+  }
+
+  .sobre-texto br{
+    display: none;
+  }
+
+  .lista-titulo{
+    margin-top: 50px;
+    font-size: 18px;
+    margin-right: 13px;
+  }
+
+  .multiespecialidade p{
+    font-size: 18px;
+  }
+
+  .multiespecialidade br{
+    display: none;
+  }
+
+  .ortopedia-conteudo{
+    margin:50px auto;
+  }
+  
+  .pediatria-conteudo{
+    margin:50px auto;
+  }
+
+  .geriatria-conteudo{
+    margin:50px auto;
+  }
+
+ #contato br{
+    display: none;
+  }
+
+}

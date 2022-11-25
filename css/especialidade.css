@@ -1,0 +1,119 @@
+/* seção sub-menu*/
+
+.secao-menu{
+  text-align: center;
+  margin: 10px auto;
+}
+
+.secao-menu a{
+  margin: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #0000008c;
+  border-bottom: 2px solid #00cad1;
+}
+
+.secao-menu a:hover{
+  color: #3a7581;
+}
+
+.secao-menu h2{
+  color: #0000008c;
+  margin-top: 50px;
+}
+
+/** horarios e lista*/
+
+.especialidade-secao h2{
+  margin-bottom: 15px;
+}
+
+.especialidade-secao p{
+  margin-bottom: 15px;
+}
+
+.horario{
+  display: flex;
+  justify-content: center;
+}
+
+.horario img{
+  max-width: 30%;
+}
+
+.horario table{
+  width: 70%;
+  border-spacing: 0;
+  text-align: left;
+}
+
+
+.horario thead{
+  background-color: #00cad1;
+  color: white;
+}
+
+
+
+.horario th{
+  padding: 10px 0px 10px 5px;
+}
+
+.horario td{
+  padding: 10px 0px 10px 5px;
+}
+
+
+.horario tbody tr:nth-of-type(odd){
+  background-color: #d0cbd0;
+}
+
+.horario tbody tr:nth-of-type(even){
+  background-color: #f1f1f1;
+}
+
+
+/*queries*/
+
+@media (max-width: 425px){
+  br{
+    display: none;
+  }
+
+
+  .horario img{
+    display: none;
+  }
+
+  .horario table{
+    width: 100%;
+  }
+
+  .horario td{
+    padding: 10px 0px 10px 5px;
+  }
+
+}
+
+@media (min-width: 426px) and (max-width: 768px){
+  br{
+    display: none;
+  }
+
+  .horario{
+    padding: 15px;
+  }
+
+  .horario img{
+    display: none;
+  }
+
+  .horario table{
+    width: 100%;
+  }
+
+  .horario td{
+    padding: 10px 0px 10px 5px;
+  }
+
+}
